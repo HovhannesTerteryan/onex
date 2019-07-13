@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Registration Suite" verbose="1" >
+<parameter name="driverName" value="webdriver.chrome.driver" />
+<parameter name="driverPath" value="D:/java/chromedriver_win32/chromedriver.exe" />
+  <test name="Regression tests" >
+    <classes>
+      <class name="am.qa.register.onex.test.RegisterOnexTest"/>
+    </classes>
+ </test>
+</suite>
