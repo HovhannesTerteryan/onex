@@ -20,6 +20,24 @@ public class OnexHomePage extends PageObject {
 
 	@FindBy(xpath="//ul[@class='dropdown-menu']//a[contains(@href, 'importrussia')]")
 	WebElement importing;
+	
+	@FindBy(xpath="//div[@id='footerlg']//ul[@class='nav navbar-nav']")
+	WebElement language;
+	
+	@FindBy(xpath="//div[@id='footerlg']//a[contains(@href, 'ru')]")
+	WebElement languageRu;
+	
+	public OnexHomePage openLanguageDropDown() {
+		language.click();
+		return new OnexHomePage(driver);
+	}
+	
+	public OnexHomePage changeLanguageRu() {
+		languageRu.click();
+		return new OnexHomePage(driver);
+	}
+	
+	
 
 	// openLoginPage() method e
 	// page object tesaki class-erum, method@ da gorcoghutyun e ayd ejum

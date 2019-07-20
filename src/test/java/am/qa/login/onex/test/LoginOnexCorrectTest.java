@@ -18,11 +18,11 @@ public class LoginOnexCorrectTest extends OnexTestBase {
 		OnexHomePage home = new OnexHomePage(driver);
 		OnexLoginPage loginOnexEmptyPass = home.openLoginPage();
 
-		loginOnexEmptyPass = (OnexLoginPage) loginOnexEmptyPass.doLogin("asdads", " ", true);
+		 loginOnexEmptyPass.doLogin("asdads", "", true);
 		
 	}
 	
-	@Test
+	@Test(dependsOnMethods = "loginOnexEmptyPass")
 	private void loginOnexCorrect() {
 
 		

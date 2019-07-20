@@ -17,14 +17,14 @@ public class LoginOnexCorrect extends PageObject {
 	WebElement usernameField;
 	
 	public void fillUserName(String username) {
-		usernameField.sendKeys(username);
+		usernameField.sendKeys();
 	}
 	
 	@FindBy(xpath="//input[@name='LoginForm[password]']")
 	WebElement passwordField;
 	
 	public void fillPassword(String password) {
-		passwordField.sendKeys(password);
+		passwordField.sendKeys();
 	}
 	
 	@FindBy(xpath="//input[@id='loginform-rememberme']")
